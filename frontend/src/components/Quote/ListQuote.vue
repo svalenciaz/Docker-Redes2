@@ -32,7 +32,7 @@
                             <div class="rows">
                                 <div class="col text-left">
                                     <b-button type='submit' variant="primary">Agregar nueva cita</b-button>
-                                    <b-button type='submit' class="btn-large-space" :to="{name: 'ListQuote'}">Cancelar</b-button>
+                                    <b-button type='reset' class="btn-large-space">Cancelar</b-button>
                                 </div>
                             </div>
                         </form>
