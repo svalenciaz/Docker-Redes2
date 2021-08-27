@@ -30,10 +30,15 @@ deactivate
 pip install django -U
 ```
 ### Librerías python necesarias
+Usar la versión de python que le corresponda
 ```
 pip install djangorestframework
 pip install django-cors-headers
+apt-get install python3.9-dev libmysqlclient-dev
+pip install mysqlclient
+pip install python-decouple
 ```
+
 ### dentro de backend
 ```
 python3 manage.py runserver
