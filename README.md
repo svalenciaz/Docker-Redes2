@@ -32,9 +32,34 @@ pip install django -U
 ### Librerías python necesarias
 ```
 pip install djangorestframework
+pip install django-cors-headers
 ```
-## Vue
+### dentro de backend
+```
+python3 manage.py runserver
+python3 manage.py migrate
+python3 manage.py makemigrations
+```
+
+## NodeJS y Vue
+
+```
+apt install nodejs
+apt install npm
+```
+### En el entorno
 ```
 npm install -g @vue/cli
 npm install -g @vue/cli-init
+```
+### Dentro de frontend
+```
+npm install
+npm run dev
+```
+
+### Librerias necesarias
+```
+npm install axios
+npm install vue bootstrap bootstrap-vue
 ```
