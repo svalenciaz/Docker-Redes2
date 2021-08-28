@@ -9,7 +9,10 @@
             <div class="col-sm-12 col-md-3">
                 <div class="card">
                     <div class="card-body">
-                        <img src="" alt="Escudo Universidad Nacional de Colombia">
+                        <!--div class="img-wrapper">
+                            <div class="img" />
+                        </div-->
+                        <img width="250" src="../../images/unal.png" alt="Escudo Universidad Nacional de Colombia">
                     </div>
                 </div>
             </div>
@@ -104,4 +107,22 @@ export default {
 </script>
 
 <style lang='css' scoped>
+  .img-wrapper {
+    aspect-ratio: 16 / 9;
+    position: relative;
+    width: 343.73333px;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 1rem 1rem 0rem 1rem;
+  }
+
+  .img {
+    background-image: url('../../images/unal.png');
+    position: absolute;
+    inset: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 </style>

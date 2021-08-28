@@ -25,8 +25,8 @@ mongoUrl = "mongodb://localhost/quotes";
 let mongoUrlDocker = "mongodb://admin-redes:123@mongodb";
 
 
-if(!local){
-    let mongoUrl = mongoUrlDocker;
+if(local){
+    mongoUrl = mongoUrlDocker;
 }
 
 // pass these options to mongo client connect request to avoid DeprecationWarning for current Server Discovery and Monitoring engine
