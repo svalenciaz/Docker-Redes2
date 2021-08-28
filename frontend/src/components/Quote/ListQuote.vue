@@ -72,7 +72,7 @@ export default {
     methods: {
         getQuotes () {
 
-            const path = 'http://127.0.0.1:8000/api/v1.0/quotes/'
+            const path = 'http://127.0.0.1:3000/quotes/'
             axios.get(path).then((response) =>{
                 this.quotes = response.data
             })
@@ -84,7 +84,7 @@ export default {
         onSubmit (event) {
             event.preventDefault()
 
-            const path = 'http://127.0.0.1:8000/api/v1.0/quotes/'
+            const path = 'http://127.0.0.1:3000/quotes/'
             axios.post(path, this.form).then((response) =>{
                 this.form.author = response.data.author
                 this.form.phrase = response.data.phrase
